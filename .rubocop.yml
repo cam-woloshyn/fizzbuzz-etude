@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 2.1
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*.rb"
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
