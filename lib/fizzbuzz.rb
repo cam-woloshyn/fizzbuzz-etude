@@ -6,11 +6,15 @@ class FizzBuzz
   def calculate(number)
     @number = number
 
-    return "fizzbuzz" if fizzbuzz?
-    return "fizz" if fizz?
-    return "buzz" if buzz?
-
-    number.to_s
+    if fizzbuzz?
+      "fizzbuzz"
+    elsif fizz?
+      "fizz"
+    elsif buzz?
+      "buzz"
+    else
+      @number.to_s
+    end
   end
 
   private
