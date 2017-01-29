@@ -6,7 +6,7 @@ class FizzBuzz
   def calculate(number)
     @number = number
 
-    return "fizzbuzz" if fizz? && buzz?
+    return "fizzbuzz" if fizzbuzz?
     return "fizz" if fizz?
     return "buzz" if buzz?
 
@@ -14,6 +14,10 @@ class FizzBuzz
   end
 
   private
+
+  def fizzbuzz?
+    fizz? && buzz?
+  end
 
   def buzz?
     (@number % 5).zero?
