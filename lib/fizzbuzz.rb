@@ -4,20 +4,22 @@ class FizzBuzz
   end
 
   def calculate(number)
-    return "fizzbuzz" if fizz?(number) && buzz?(number)
-    return "fizz" if fizz?(number)
-    return "buzz" if buzz?(number)
+    @number = number
+
+    return "fizzbuzz" if fizz? && buzz?
+    return "fizz" if fizz?
+    return "buzz" if buzz?
 
     number.to_s
   end
 
   private
 
-  def buzz?(number)
-    (number % 5).zero?
+  def buzz?
+    (@number % 5).zero?
   end
 
-  def fizz?(number)
-    (number % 3).zero?
+  def fizz?
+    (@number % 3).zero?
   end
 end
