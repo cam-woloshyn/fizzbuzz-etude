@@ -42,4 +42,12 @@ RSpec.describe FizzBuzz do
       expect(result).to eq("fizzbuzz")
     end
   end
+
+  describe "default case" do
+    it "returns itself as a string for non multiples of 3 and 5" do
+      result = FizzBuzz.calculate(2)
+
+      expect(result).to eq("2")
+    end
+  end
 end
