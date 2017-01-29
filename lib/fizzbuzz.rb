@@ -1,4 +1,8 @@
 class FizzBuzz
+  FIZZBUZZ = "fizzbuzz".freeze
+  FIZZ = "fizz".freeze
+  BUZZ = "buzz".freeze
+
   def self.calculate(number)
     FizzBuzz.new.calculate(number)
   end
@@ -7,11 +11,11 @@ class FizzBuzz
     @number = number
 
     if fizzbuzz?
-      "fizzbuzz"
+      FIZZBUZZ
     elsif fizz?
-      "fizz"
+      FIZZ
     elsif buzz?
-      "buzz"
+      BUZZ
     else
       @number.to_s
     end
