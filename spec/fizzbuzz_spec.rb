@@ -28,4 +28,12 @@ RSpec.describe FizzBuzz do
       expect(result).to eq("buzz")
     end
   end
+
+  describe "fizzbuzz numbers" do
+    it "returns 'fizzbuzz' when passed 15" do
+      result = FizzBuzz.calculate(15)
+
+      expect(result).to eq("fizzbuzz")
+    end
+  end
 end
