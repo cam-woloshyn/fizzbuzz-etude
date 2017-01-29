@@ -12,4 +12,10 @@ RSpec.describe FizzBuzz do
 
     expect(result).to eq("buzz")
   end
+
+  it "returns 'fizz' for an arbitrary multiple of 3" do
+    result = FizzBuzz.calculate(12)
+
+    expect(result).to eq("fizz")
+  end
 end
