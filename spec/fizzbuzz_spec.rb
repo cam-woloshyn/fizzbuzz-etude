@@ -35,5 +35,11 @@ RSpec.describe FizzBuzz do
 
       expect(result).to eq("fizzbuzz")
     end
+
+    it "returns 'fizzbuzz' for an arbitrary multiple of 3 and 5" do
+      result = FizzBuzz.calculate(30)
+
+      expect(result).to eq("fizzbuzz")
+    end
   end
 end
