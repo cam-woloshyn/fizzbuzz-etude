@@ -1,8 +1,4 @@
-module FizzBuzz
-  def self.calculate(_number)
-    "fizz"
-  end
-end
+require "fizzbuzz"
 
 RSpec.describe FizzBuzz do
   it "return 'fizz' when passed 3" do
